@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -19,7 +18,7 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="">충전하기</a></li>
+               <li class="this"><a href="">요금결제</a></li>
             </ul>
          </div>
          <div class="payment_wrap">
@@ -63,7 +62,7 @@
                      <th>장문(LMS)</th>
                      <th>이미지(MMS)</th>
                      <th></th>
-                     <th>단문(RCS)</th>
+                     <th>템플릿 유형</th>
                      <th>장문(RCS)</th>
                      <th>이미지(RCS)</th>
                   </tr>

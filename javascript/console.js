@@ -30,9 +30,11 @@ $(function(){
   }
 
   // 알림
-  window.setTimeout(function(){
-      $('.report').hide('600');
-  },10000);
+  $('.report').each(function(index){
+    window.setTimeout(function(){
+      $('.report').eq(index).hide('600');
+  },19500 + index * 500);
+  });
   $('.report_close').click(function(){
       $(this).parent('.report').hide();
   });

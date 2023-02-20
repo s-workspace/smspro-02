@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -58,7 +57,7 @@
             <a href="callback_manage.php">발신번호 관리</a>
          </div>
          <div class="info_box">
-            <h1><img src="../images/common/info.png" alt="">브랜드가 등록되어 있지 않습니다. RCS 서비스 이용을 원하시면 브랜드를 등록해 주세요.</h1>
+            <h1><img src="../images/common/info.png" alt="">브랜드가 연동되어 있지 않습니다. RCS 서비스 이용을 원하시면 브랜드를 연동해 주세요.</h1>
             <a href="brand.php">브랜드 관리</a>
          </div>
          <div class="info_box">

@@ -75,13 +75,14 @@ $(function (){
 
   // 네비 이벤트
   var offsetTop = $('.nav').offset().top;
-  var s1Top = $('#s1').offset().top -120;
-  var s2Top = $('#s2').offset().top -300;
-  var s3Top = $('#s3').offset().top -300;
-  var s4Top = $('#s4').offset().top -120;
+  
 
   $(window).scroll(function(){
      var scrollTop = 0;
+     var s1Top = $('#s1').offset().top -60;
+     var s2Top = $('#s2').offset().top -60;
+     var s3Top = $('#s3').offset().top -60;
+     var s4Top = $('#s4').offset().top -60;
 
      scrollTop = $(window).scrollTop();
 
@@ -111,10 +112,11 @@ $(function (){
   $('.tag').click(function(e){
      e.preventDefault();
      $(".nav").addClass('on');
-     var offsetTop = $('.section').offset().top;
+     var scrollTop = 0;
+     var offsetTop = $('.section').offset().top - 60;
      scrollTop = $(window).scrollTop();
-     if(scrollTop > offsetTop) $('html,body').animate({scrollTop:$(this.hash).offset().top + 20}, 500);
-     else $('html,body').animate({scrollTop:$(this.hash).offset().top - 60}, 500);
+     if(scrollTop > offsetTop) $('html,body').animate({scrollTop:$(this.hash).offset().top - 40}, 500);
+     else $('html,body').animate({scrollTop:$(this.hash).offset().top - 120}, 500);
   });
   // 네비 이벤트 끝
 

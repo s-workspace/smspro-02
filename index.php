@@ -7,7 +7,6 @@
    <link rel="icon" href="favicon.ico">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/common.css">
-   <link rel="stylesheet" href="css/SUIT.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
    <title>문자프로 - 메시지 통합 플랫폼</title>
@@ -127,18 +126,14 @@
    </div>
    <div class="section" id="s1">
       <div class="wrap">
-         <div class="sec_tit">
-            <h2>다양한 문자 서비스 하나로 모아</h2>
-            <h1>메시지 통합 플랫폼 <b>문자프로</b></h1>
-         </div>
          <div class="swiper msg_kind_wrap">
             <div class="swiper-wrapper">
                <div class="msg_kind swiper-slide">
                   <i>
                      <span><img src="images/main/sms.png" alt="">단문 전송</span>
                      <h1>짧고 간단한 안내 문자<br>빠르고 간편하게</h1>
-                     <h2>일반문자 | 최대 90Byte 입력</h2>
-                     <h3>기업문자 | 최대 100자 입력, 액션버튼 1개 추가</h3>
+                     <h2>일반 메시지 - 최대 90Byte 입력</h2>
+                     <h3>기업 메시지 - 최대 100자 입력, 액션버튼 1개 추가</h3>
                      <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
                   </i>
                   <img src="images/main/msg_kind01.png" alt="">
@@ -147,8 +142,8 @@
                   <i>
                      <span><img src="images/main/lms.png" alt="">장문 전송</span>
                      <h1>긴 내용의 광고/안내 문자<br>풍부한 메시지 전송</h1>
-                     <h2>일반문자 | 최대 2,000Byte 입력</h2>
-                     <h3>기업문자 | 최대 1,300자 입력, 액션버튼 3개 추가</h3>
+                     <h2>일반 메시지 - 최대 2,000Byte 입력</h2>
+                     <h3>기업 메시지 - 최대 1,300자 입력, 액션버튼 3개 추가</h3>
                      <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
                   </i>
                   <img src="images/main/msg_kind02.png" alt="">
@@ -157,8 +152,8 @@
                   <i>
                      <span><img src="images/main/mms.png" alt="">이미지 전송</span>
                      <h1>이미지와 함께 내용 전달<br>광고/홍보, 상품 소개</h1>
-                     <h2>일반문자 | 이미지(300KB) 첨부 가능</h2>
-                     <h3>기업문자 | 이미지(1MB) 첨부 가능, 액션버튼 3개 추가</h3>
+                     <h2>일반 메시지 - 이미지(300KB) 첨부 가능</h2>
+                     <h3>기업 메시지 - 이미지(1MB) 첨부 가능, 액션버튼 3개 추가</h3>
                      <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
                   </i>
                   <img src="images/main/msg_kind03.png" alt="">
@@ -240,6 +235,11 @@
                   <span>브랜드 개설부터 연동방법<br>알아보세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
+               <li class="active"><a href="page/guide08.php" target="_blank">
+                  <h1>RCS 브랜드 연동방법</h1>
+                  <span>브랜드 연동방법<br>자세히 알아보세요.</span>
+                  <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+               </a></li>
                <li class="active"><a href="page/guide01.php" target="_blank">
                   <h1>발신번호 사전등록 안내</h1>
                   <span>전송전에 미리 발신번호를<br>등록해 주세요.</span>
@@ -255,14 +255,9 @@
                   <span>광고성 메시지 전송전 반드시<br>확인해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
-               <li class="active"><a href="page/guide05.php" target="_blank">
-                  <h1>스팸필터링 서비스 확인안내</h1>
-                  <span>결과값은 성공인데<br>문자수신이 안된다면?</span>
-                  <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
-               </a></li>
-               <li class="active"><a href="page/guide06.php" target="_blank">
-                  <h1>번호도용 문자차단 확인안내</h1>
-                  <span>결과값이 모두 실패로<br>처리된다면 확인해 주세요.</span>
+               <li class="active"><a href="page/guide04.php" target="_blank">
+                  <h1>광고메시지 수신동의 의무안내</h1>
+                  <span>수신동의 여부를 확인하지 않을 경우<br>과태료 부과대상이 될 수 있습니다.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
             </ul>

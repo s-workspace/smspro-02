@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -23,7 +22,6 @@
          </div>
          <div class="terms_title">
             <h1>이용가이드</h1>
-            <!-- <a href="" style="font-size:17px; display: inline-block; line-height:20px">💡</a> -->
             <span>서비스 이용이 어려우신가요?<br>아래의 가이드를 참고하여 이용해 보세요.<img src="../images/emo/emo01.jpg" alt=""></span>
             <p>더 자세한 이용방법이 궁금하시다면 고객센터로 문의해 주세요. <b>1599-8744</b></p>
          </div>
@@ -43,6 +41,7 @@
                <h2>RCS 이용 가이드</h2>
                <ul>
                   <li><a href="guide07.php"><img src="../images/emo/emo08.jpg" alt=""><span>RCS 서비스 이용안내</span></a></li>
+                  <li><a href="guide08.php"><img src="../images/emo/emo09.jpg" alt=""><span>RCS 브랜드 연동안내</span></a></li>
                </ul>
             </i>
             <i id="faq">

@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -18,9 +17,7 @@
       <h1>브랜드 연동</h1>
       <ul class="brand_box">
          <div class="brand_box_top">
-            <h1>
-               RCS 브랜드를 문자프로와 연동합니다. 브랜드 연동을 위해 <b>사업자인증이 필요</b>합니다.
-            </h1>
+            <h1>생성된 브랜드 클릭 후 브랜드 정보안에 브랜드 ID, 브랜드 Key를 아래 입력해주세요.</h1>
             <ul class="input_name_box">
                <li>
                   <input type="text" id="brand_id" name="brand_id" placeholder="브랜드 ID를 입력해 주세요.">
@@ -29,6 +26,7 @@
                   <input type="text" id="brand_key" name="brand_key" placeholder="브랜드 Key를 입력해 주세요.">
                </li>
             </ul>
+            <h2>- 브랜드 연동을 위해서는 <b>사업자인증이 필요</b>합니다.</h2>
          </div>
          <i>
             <p>
@@ -100,7 +98,7 @@
             <h2>5. 생성한 브랜드를 연동</h2>
             <a href="" class="brand_add btn2">브랜드 연동신청</a>
             <div class="title2">
-               <h1><img src="../images/common/notice_icon.png" alt="">연동된 브랜드 목록</h1>
+               <h1><img src="../images/common/info_icon02.png" alt="">연동된 브랜드 목록</h1>
             </div>
             <table>
                <colgroup>

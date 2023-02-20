@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -19,7 +18,7 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li><a href="msg_transmit.php">전송내역 관리</a></li>
+               <li><a href="msg_transmit.php">전송내역 목록</a></li>
                <li class="this"><a href="stat_manage.php">전송내역 통계</a></li>
             </ul>
          </div>

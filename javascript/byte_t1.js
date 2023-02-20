@@ -1,4 +1,10 @@
 $(function(){
+  // 제목 입력
+  $('#msg_tit_input').on('keyup keydown', function(){
+    var msgTitle = $(this).val();
+    $('.msg_title').html(msgTitle);
+  });
+  
   // 글자수 세기
   $("#text_box").on('keyup keydown', function (e) {
     var totalByte = 0;
@@ -10,16 +16,29 @@ $(function(){
       if (escape(currentByte).length >= 4) totalByte += 2;
       else totalByte++;
 
-      if (totalByte <= 90) saveText += textLength.charAt(i);
+      if (totalByte <= 2000) saveText += textLength.charAt(i);
     }
     textLength = totalByte;
   if (textLength > 90) {
-    alert("90Byte 이상 작성하실 수 없습니다.");
+    $('.write_box .msg_text').removeClass("sms");
+    $('.write_box .msg_text').addClass("lms");
+    $('.write_box .msg_text.lms .t_byte > span').html('/2,000Byte');
+    $('.msg_title').addClass('on');
+  }
+  else {
+    $('.write_box .msg_text').removeClass("lms");
+    $('.write_box .msg_text').addClass("sms");
+    $('.write_box .t_byte > span').html('/90Byte');
+    $('.write_box .msg_text.mms .t_byte > span').html('/2,000Byte');
+    $('.msg_title').removeClass('on');
+  }
+
+  if (textLength > 2000) {
+    alert("2,000Byte 이상 작성하실 수 없습니다.");
     $(this).val(saveText);
   }
   else {
     $('.msg_write .t_byte > b').html(textLength);
-    $('.return_write .t_byte > b').html(textLength);
   }
 
   if (textLength == 0) {
@@ -40,10 +59,10 @@ $(function(){
       if (escape(currentByte).length >= 4) totalByte += 2;
       else totalByte++;
 
-      if (totalByte <= 90) saveText += textLength.charAt(i);
+      if (totalByte <= 2000) saveText += textLength.charAt(i);
 
-      if (totalByte > 90) {
-         alert("90Byte 이상 작성하실 수 없습니다.");
+      if (totalByte > 2000) {
+         alert("2,000Byte 이상 작성하실 수 없습니다.");
          $(this).val(saveText);
        }
     }

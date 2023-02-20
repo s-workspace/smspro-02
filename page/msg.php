@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -97,18 +96,22 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="msg.php">단문 전송</a></li>
-               <li><a href="msg=lms.php">장문 전송</a></li>
-               <li><a href="msg=mms.php">이미지 전송</a></li>
-               <li>|</li>
-               <li><a href="msg=template.php">템플릿 전송</a></li>
-               <li><a href="msg=rlms.php">장문(RCS) 전송</a></li>
-               <li><a href="msg=rmms.php">이미지(RCS) 전송</a></li>
+               <li class="this"><a href="msg.php">단문전송</a></li>
+               <li><a href="msg=lms.php">장문전송</a></li>
+               <li><a href="msg=mms.php">이미지전송</a></li>
+               <li class="line_bar">|</li>
+               <li><a href="msg=template.php">템플릿전송</a></li>
+               <li><a href="msg=rlms.php">장문(RCS)전송</a></li>
+               <li><a href="msg=rmms.php">이미지(RCS)전송</a></li>
                <span class="unit_btn">전송단가 확인</span>
                <div class="unit_box">
                   <span><h1>단문(SMS)</h1>15P</span>
                   <span><h1>장문(LMS)</h1>35P</span>
                   <span><h1>이미지(MMS)</h1>130P</span>
+                  <span class="line"></span>
+                  <span><h1>템플릿유형</h1>13P</span>
+                  <span><h1>장문(RCS)</h1>35P</span>
+                  <span><h1>이미지(RCS)</h1>110P</span>
                </div>
             </ul>
          </div>
@@ -173,15 +176,16 @@
                      <div class="msg_table">
                         <i>
                            <div class="msg_tit">
-                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20" readonly>
+                              <input id="msg_tit_input" type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20">
                            </div>
                            <div class="msg_text sms">
                               <h1 class="type01 none">(광고)</h1>
                               <textarea name="" id="text_box" placeholder="내용 입력
-(90Byte 이상 작성할 수 없습니다.)"></textarea>
+- 90Byte 초과시 LMS로 자동 전환
+- LMS 전환시 최대 2,000Byte 까지 입력 가능"></textarea>
                               <h2 class="type01 none">무료수신거부 0808718744</h2>
                               <div class="t_byte">
-                                 <b>0</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1>
+                                 <b>0</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1><h1 class="msg_t2">LMS 장문</h1>
                               </div>
                            </div>
                         </i>
@@ -190,7 +194,7 @@
                               <li><a href="" class="myMsg">메시지 불러오기</a></li>
                               <li><a href="" class="recMsg">전송내역 불러오기</a></li>
                               <li><a href="">내용저장</a></li>
-                              <li><a href="" id="return_btn">다시쓰기</a></li>
+                              <li><a href="" id="return_btn3">다시쓰기</a></li>
                               <li><a href="" class="action_btn sh_btn">특수문자</a></li>
                               <li><a href="" class="action_btn variable_btn">#{변수}</a></li>
                            </ul>

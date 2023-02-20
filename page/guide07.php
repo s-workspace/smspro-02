@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -56,20 +55,12 @@
                            - 개설 된 브랜드의 운영 가능
                         </td>
                      </tr>
-                     <tr>
-                        <th>대행사</th>
-                        <th>대행사</th>
-                        <td>
-                           - 가입 심사 승인 후 가입 완료 (사업자등록증 제출 필수)<br>
-                           - 기업 관리자로부터 브랜드 운영 권한을 받아 브랜드 운영 가능 (발신번호/템플릿 관리)
-                        </td>
-                     </tr>
                   </tbody>
                </table>
             </i>
             <i>
                <strong>02. 브랜드 개설</strong>
-               <p>RCS 메시지를 발송하기 위해서는 브랜드를 개설해야 합니다.</p>
+               <p>RCS 메시지를 전송하기 위해서는 브랜드를 개설해야 합니다.</p>
                <p>브랜드 개설 시 등록한 정보는 운영자 심사 완료 후 메시지 앱의 프로필 영역에 노출 됩니다.</p>
                <table class="rcs_info mt20">
                   <thead>
@@ -89,8 +80,8 @@
             <i>
                <strong>03. 브랜드 대행사 / 부관리자 지정</strong>
                <p>브랜드 별로 RCS 서비스를 운영할 부관리자와 대행사를 지정합니다.</p>
-               <p>RCS Biz 메시지를 발송하기 위해서는 반드시 하나 이상의 대행사에 브랜드 운영 권한을 부여해야 합니다.</p><br>
-               <p class="t_red">※ 원활한 서비스 이용을 위해 사전에 대행사와 브랜드 운영 및 RCS Biz 메시지 발송에 대한 계약을 진행해 주세요.</p>
+               <p>RCS Biz 메시지를 전송하기 위해서는 반드시 하나 이상의 대행사에 브랜드 운영 권한을 부여해야 합니다.</p><br>
+               <p class="t_red">※ 대행사 미지정시 RCS 메시지를 전송할 수 없습니다. (대행사/부관리자 복수 지정 가능)</p>
             </i>
             <i>
                <strong>04. 발신번호 등록</strong>
@@ -129,104 +120,10 @@
                <p>※ 발신번호는 수신자가 실제 발신(통화)이 가능한 번호만 허용</p>
             </i>
             <i>
-               <strong>05. 템플릿 등록</strong>
-               <p>브랜드를 개설하고 승인된 발신번호로 메시지를 발송할 수 있는 템플릿은 텍스트 유형과 이미지 유형으로 구분할 수 있습니다.</p>
-               <p>텍스트 템플릿은 타이틀 선택형과 타이틀 자유형이 제공되며 다양한 형태로 메시지를 발송할 수 있습니다.</p>
-               <p>이미지 템플릿은 보다 다양한 형태와 옵션으로 메시지 성격에 맞는 이미지를 표현할 수 있으며 정보성은 물론 광고성 메시지도 발송할 수 있습니다.</p>
-               <table class="rcs_info2 mt20">
-                  <thead>
-                     <tr>
-                        <th rowspan="2">구분</th>
-                        <th rowspan="2">RCS<br>SMS</th>
-                        <th rowspan="2">RCS<br>LMS</th>
-                        <th rowspan="2">RCS<br>MMS</th>
-                        <th colspan="3">RCS 텍스트 템플릿</th>
-                        <th colspan="8">RCS 이미지 템플릿</th>
-                     </tr>
-                     <tr>
-                        <th colspan="3">타이틀 선택형 / 타이틀 자유형</th>
-                        <th colspan="2">이미지 & 타이틀 강조형</th>
-                        <th colspan="2">이미지 강조형</th>
-                        <th colspan="2">썸네일형</th>
-                        <th colspan="2">SNS형</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>메시지 타입</td>
-                        <td>Formatcard</td>
-                        <td>Formatcard</td>
-                        <td>Formatcard</td>
-                        <td>서술<br>Description</td>
-                        <td>스타일<br>Cell</td>
-                        <td>기본<br>Free</td>
-                        <td>정방형<br>(1 : 1)</td>
-                        <td>세로형<br>(3 : 4)</td>
-                        <td>정방형<br>(1 : 1)</td>
-                        <td>세로형<br>(3 : 4)</td>
-                        <td>세로형</td>
-                        <td>가로형</td>
-                        <td>-</td>
-                        <td>중간<br>버튼</td>
-                     </tr>
-                     <tr>
-                        <td>운영자<br>승인 여부</td>
-                        <td>불필요</td>
-                        <td>불필요</td>
-                        <td>불필요</td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td>불필요</td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                        <td><strong>필요</strong></td>
-                     </tr>
-                     <tr>
-                        <td>정보성<br>메시지 발송</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                     </tr>
-                     <tr>
-                        <td>광고성<br>메시지 발송</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>불가</td>
-                        <td>불가</td>
-                        <td>불가</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                        <td>가능</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </i>
-            <i>
-               <strong>06. 브랜드 연동</strong>
+               <strong>05. 브랜드 연동</strong>
                <p>문자프로 로그인 후 <b class="t_red">마이페이지 > 브랜드 관리 메뉴</b>에서 절차에 따라 브랜드 연동신청을 해주세요.</p>
-               <p>브랜드 연동 신청이 완료되면 <b class="t_red">메시지 전송 페이지에서 브랜드 선택/템플릿 선택 후 RCS 메시지 전송이 가능</b>합니다.</p>
+               <p>브랜드 연동 신청이 완료되면 <b class="t_red">메시지 전송 페이지에서 브랜드 선택/템플릿 선택 후 RCS 메시지 전송이 가능</b>합니다.</p><br>
+               <p><a href="guide08.php">자세히 보기</a></p>
             </i>
          </div>
       </div>

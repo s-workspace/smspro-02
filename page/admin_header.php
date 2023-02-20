@@ -14,9 +14,9 @@
 <div class="admin_header">
    <div class="menu">
       <a href="msg.php">메시지 전송</a>
-      <a href="payment.php">충전하기</a>
-      <a href="notice.php">공지사항</a>
-      <a href="inquiry.php">문의하기</a>
+      <a href="payment.php">요금결제</a>
+      <a href="profile.php">마이페이지</a>
+      <a href="notice.php">고객센터</a>
    </div>
    <i>
       <div class="tool_wrap">
@@ -48,7 +48,6 @@
       </div>
       <div class="top_btn">
          <ul>
-            <li><a href="profile.php">마이페이지</a></li>
             <li><a href="../index.php">로그아웃</a></li>
          </ul>
       </div>

@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -105,6 +104,16 @@
          <div class="title_top">
             <ul>
                <li class="this"><a href="">메시지 전송</a></li>
+               <span class="unit_btn">전송단가 확인</span>
+               <div class="unit_box">
+                  <span><h1>단문(SMS)</h1>15P</span>
+                  <span><h1>장문(LMS)</h1>35P</span>
+                  <span><h1>이미지(MMS)</h1>130P</span>
+                  <span class="line"></span>
+                  <span><h1>템플릿유형</h1>13P</span>
+                  <span><h1>장문(RCS)</h1>35P</span>
+                  <span><h1>이미지(RCS)</h1>110P</span>
+               </div>
             </ul>
          </div>
          <div class='msg_wrap'>

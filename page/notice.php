@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -19,7 +18,8 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="">공지사항</a></li>
+               <li class="this"><a href="notice.php">공지사항</a></li>
+               <li><a href="inquiry.php">문의하기</a></li>
             </ul>
          </div>
          <div class="selbox_top mt20">

@@ -7,7 +7,6 @@
    <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
-   <link rel="stylesheet" href="../css/SUIT.css">
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -97,18 +96,22 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li><a href="msg.php">단문 전송</a></li>
-               <li><a href="msg=lms.php">장문 전송</a></li>
-               <li><a href="msg=mms.php">이미지 전송</a></li>
-               <li>|</li>
-               <li><a href="msg=template.php">템플릿 전송</a></li>
-               <li class="this"><a href="msg=rlms.php">장문(RCS) 전송</a></li>
-               <li><a href="msg=rmms.php">이미지(RCS) 전송</a></li>
+               <li><a href="msg.php">단문전송</a></li>
+               <li><a href="msg=lms.php">장문전송</a></li>
+               <li><a href="msg=mms.php">이미지전송</a></li>
+               <li class="line_bar">|</li>
+               <li><a href="msg=template.php">템플릿전송</a></li>
+               <li class="this"><a href="msg=rlms.php">장문(RCS)전송</a></li>
+               <li><a href="msg=rmms.php">이미지(RCS)전송</a></li>
                <span class="unit_btn">전송단가 확인</span>
                <div class="unit_box">
                   <span><h1>단문(SMS)</h1>15P</span>
                   <span><h1>장문(LMS)</h1>35P</span>
                   <span><h1>이미지(MMS)</h1>130P</span>
+                  <span class="line"></span>
+                  <span><h1>템플릿유형</h1>13P</span>
+                  <span><h1>장문(RCS)</h1>35P</span>
+                  <span><h1>이미지(RCS)</h1>110P</span>
                </div>
             </ul>
          </div>
@@ -369,7 +372,7 @@
                               <h1 class="type01 none">(광고)</h1>
                               <textarea name="" id="text_box2" placeholder="내용 입력
 - 90Byte 초과시 LMS로 자동 전환
-- LMS 전환시 최대 2000Byte 까지 입력 가능
+- LMS 전환시 최대 2,000Byte 까지 입력 가능
 - 이미지 업로드시 MMS로 자동 전환"></textarea>
                               <h2 class="type01 none">무료수신거부 0808718744</h2>
                               <div class="t_byte">

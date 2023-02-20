@@ -18,7 +18,7 @@ $(function(){
     $('.msg_view_text span').html('내용 미리보기');
     $('.image_preview a').remove();
     $('.btn_view').hide();
-    $('.msg_title ').removeClass('on mms');
+    $('.msg_title').removeClass('on');
   });
 
   $('#return_btn2').click(function(e){
@@ -28,6 +28,18 @@ $(function(){
     $('.return_write .msg_text').addClass('sms');
     $('.return_write .t_byte b').html('0');
     $('.t_byte > span').html('/90Byte');
+  });
+
+  $('#return_btn3').click(function(e){
+    e.preventDefault();
+    $('#text_box').val('');
+    $('.msg_write .t_byte b').html('0');
+    $('.msg_view_text span').html('내용 미리보기');
+    $('.image_preview a').remove();
+    $('.btn_view').hide();
+    $('.msg_title').removeClass('on');
+    $('.msg_text').removeClass("lms");
+    $('.msg_text').addClass("sms");
   });
 
   // 버튼 추가
@@ -236,12 +248,12 @@ $(function(){
     if(textLength >= 90) {
     $('.return_write .msg_text').removeClass("sms");
     $('.return_write .msg_text').addClass("lms");
-    $('.return_write .msg_text.lms .t_byte > span').html('/2000Byte');
+    $('.return_write .msg_text.lms .t_byte > span').html('/2,000Byte');
   } else {
     $('.return_write .msg_text').removeClass("lms");
     $('.return_write .msg_text').addClass("sms");
     $('.return_write .t_byte > span').html('/90Byte');
-    $('.return_write .msg_text.mms .t_byte > span').html('/2000Byte');
+    $('.return_write .msg_text.mms .t_byte > span').html('/2,000Byte');
   }
   if (textLength > 2000) {
     alert("2,000Byte 이상 작성하실 수 없습니다.");
@@ -431,7 +443,7 @@ function handleImgFileSelect(e) {
             $(".image_preview").append(html);
             $(".msg_text").addClass('mms');
             $('.msg_title').addClass('mms');
-            $('.msg_text.mms .t_byte > span').html('/2000Byte');
+            $('.msg_text.mms .t_byte > span').html('/2,000Byte');
             index++;
         }
         reader.readAsDataURL(f);
